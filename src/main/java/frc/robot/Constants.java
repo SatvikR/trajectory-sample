@@ -21,10 +21,10 @@ import edu.wpi.first.math.util.Units;
  */
 public final class Constants {
     public static final class DriveConstants {
-        public static final double ksVolts = 0;
-        public static final double kvVoltSecondsPerMeter = 0;
-        public static final double kaVoltSecondsSquaredPerMeter = 0;
-        public static final double kPDriveVel = 0;
+        public static final double ksVolts = 0.59099;
+        public static final double kvVoltSecondsPerMeter = 3.9611;
+        public static final double kaVoltSecondsSquaredPerMeter = 0.31905;
+        public static final double kPDriveVel = 4.6334;
 
         public static final double kTrackWidthMeters = Units.inchesToMeters(23);
         public static final DifferentialDriveKinematics kDriveKinematics = new DifferentialDriveKinematics(
@@ -32,6 +32,16 @@ public final class Constants {
 
         public static final double kMaxSpeedMetersPerSecond = 3;
         public static final double kMaxAccelerationMetersPerSecondSquared = 3;
+
+        public static final int leftUpperMotorID = 4;
+        public static final int leftLowerMotorID = 3;
+        public static final int rightLowerMotorID = 1;
+        public static final int rightUpperMotorID = 2;
+    }
+
+    public static final class AutoConstants {
+        public static final double kMaxSpeedMetersPerSecond = Units.feetToMeters(7.52);
+        public static final double kMaxAccelerationMetersPerSecondSquared = Units.feetToMeters(4);
 
         public static final double kRamseteB = 2;
         public static final double kRamseteZeta = 0.7;
